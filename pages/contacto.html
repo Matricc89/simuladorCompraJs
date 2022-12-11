@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Keywords -->
+    <meta name="keywords" content="Shoesbydesing, contacto, consulta, pedidos, info, calzado">
+    <!-- description -->
+    <meta name="description"
+        content="Shoesbydesing, plataforma online, donde podras realizar consultas y te las responderemos inmediato">
+    <!-- Link Favicon -->
+    <link rel="icon" href="../img/logo redondo.png">
+    <!-- Link | Font-awesome -->
+    <script src="https://kit.fontawesome.com/926c03c1c9.js" crossorigin="anonymous"></script>
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Estilos | CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!-- Menu Inicio -->
+
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <a href="../index.html" class="enlace">
+                <img src="../img/logo redondo.png" alt="logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a class="active"  href="./contacto.html">Contacto</a></li>
+                <li><a href="./vercarrito.html">Ver Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Main Contacto -->
+    <main class="main-cont">
+        <div class="conteiner-fluid py-3 mx-5">
+            <div class="mb-4 border-bottom">
+                <h1>Contacto</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <form class="form" method="post" action="" autocomplete="off">
+                        <div class="mb-3">
+                            <label for="Nombre y apellido" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" autofocus />
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Correo electronico</label>
+                            <input type="text" class="form-control" id="email" name="email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="Asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" name="asunto" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="Mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" name="mensaje" id="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-primary">
+                            Enviar...
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de pagina -->
+
+    <footer>
+        <nav class="sideFooter1">
+
+            <ul>
+                <li>
+                    <a href="#" class="facebook">
+                        <!--las imagenes las saque de una maqueta que hice del gobierno de la ciudad-->
+                        <img src="https://www.buenosaires.gob.ar/sites/gcaba/files/facebook_0.png" alt="Facebook">
+                        <!--https://maqueta-gcba-matiasricci.netlify.app-->
+                        <p>Facebook</p>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#" class="instagram">
+                        <img src="https://www.buenosaires.gob.ar/sites/gcaba/files/instagram_0.png" alt="instagram">
+                        <p>Instagram</p>
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <img src="../img/logo redondo.png" alt="Logo" class="logo-footer">
+            <h3>Shoes By Desing</h3>
+        </div>
+        <nav class="sideFooter2">
+            <ul>
+                <li>
+                    <a href="#">Terminos y condiciones</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">Dejanos un mensaje</a>
+                </li>
+                <li>
+                    <a href="#">¿Como comprar?</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

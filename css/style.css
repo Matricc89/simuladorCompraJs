@@ -1,0 +1,678 @@
+@import url('https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css');
+
+main {
+    background-image: url(../img/bodi2.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/*fonts*/
+/*Reseteo*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Scroll-Bar*/
+body::-webkit-scrollbar {
+    width: 20px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(247, 176, 117, 0.877);
+    border-radius: 50px;
+}
+
+/* Estilos Nav Pantallas Grandes */
+header {
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to right, rgb(247, 93, 126), rgba(247, 176, 117, 0.877));
+    height: 160px;
+}
+
+header nav {
+    height: 160px;
+    width: 100%;
+}
+
+.enlace {
+    position: absolute;
+    padding: 2px 50px;
+}
+
+.logo {
+    height: 150px;
+}
+
+header nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    line-height: 160px;
+    margin: 0 5px;
+}
+
+header nav ul li a {
+    color: rgb(15, 15, 15);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header li a.active,
+header li a:hover {
+    background: rgba(0, 255, 255, 0.952);
+    color: black;
+    transition: .5s;
+
+
+}
+
+.checkbtn {
+    font-size: 50px;
+    color: white;
+    float: right;
+    line-height: 160px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/*Main Inicio*/
+
+.home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.home h1 {
+    font-size: 55px;
+    text-decoration: underline;
+
+}
+
+.home h3 {
+    margin-left: 20px;
+}
+
+.banner img {
+    border-radius: 20px;
+    margin-bottom: 150px;
+}
+
+.home2 img {
+
+    margin-bottom: 10px;
+    margin-left: 15px;
+    box-sizing: 1px;
+    border-radius: 25px;
+    padding: 0;
+    -webkit-box-shadow: 0px 5px 26px 8px rgba(211, 47, 252, 0.66);
+    -moz-box-shadow: 0px 8px 26px 8px rgba(254, 28, 243, 0.66);
+    box-shadow: 0px 5px 26px 8px rgba(227, 11, 216, 0.66);
+}
+
+.home2 button {
+
+    background-color: rgba(0, 255, 255, 0.952);
+    border-radius: 25px;
+    width: 600px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    border-color: rgba(0, 255, 255, 0.952);
+}
+
+.home2 button:hover {
+    background: rgba(247, 176, 117, 0.877);
+    transition: .5s;
+    border-color: rgba(247, 176, 117, 0.877);
+
+}
+
+.home2 button a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.home3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.home3 img {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    box-sizing: 1px;
+    border-radius: 25px;
+    padding: 0;
+    -webkit-box-shadow: 0px 5px 26px 8px rgba(211, 47, 252, 0.66);
+    -moz-box-shadow: 0px 8px 26px 8px rgba(254, 28, 243, 0.66);
+    box-shadow: 0px 5px 26px 8px rgba(227, 11, 216, 0.66);
+}
+
+.home3 button {
+    background-color: rgba(0, 255, 255, 0.952);
+    border-radius: 25px;
+    width: 100px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+    border-color: rgba(0, 255, 255, 0.952);
+
+}
+.home3 h3{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.home3 button:hover {
+    background: rgba(247, 176, 117, 0.877);
+    transition: .5s;
+    border-color: rgba(247, 176, 117, 0.877);
+
+
+}
+
+.home3 button a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+/*Main Productos*/
+.search{
+    width: 100%;
+    text-align: center;
+}
+.inputSearch {
+    font-size: larger;
+    width: 340px;
+    margin: 25px;
+    border-radius: 25px;
+    padding: 10px;
+}
+.section1 .section2 .btn  {
+
+    background-color: rgba(0, 255, 255, 0.952);
+    margin-top: 10px;
+    width: 100px;
+    padding: 5px;
+    border-radius: 25px;
+    border-color: rgba(0, 255, 255, 0.952);
+    margin-left: 100px;
+
+}
+
+.section1 .section2 .btn:hover {
+    background: rgba(247, 176, 117, 0.877);
+    transition: .5s;
+    border-color: rgba(247, 176, 117, 0.877);
+
+}
+
+.section1 .btn a {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section2 button {
+
+    margin-bottom: 35px;
+}
+.verCarrito{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+.btn2{
+    background-color: rgba(0, 255, 255, 0.952);
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width: 300px;
+    padding: 30px;
+    border-radius: 25px;
+    border-color: rgba(0, 255, 255, 0.952);
+    font-size: 35px;
+    
+}
+.section2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 25px;
+    padding-top: 25p;
+}
+
+
+.section2 img {
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 26px 8px rgba(32, 31, 32, 0.66);
+    -moz-box-shadow: 0px 8px 26px 8px rgba(15, 1, 15, 0.66);
+    box-shadow: 0px 5px 26px 8px rgba(36, 17, 35, 0.66);
+}
+
+.section2 div h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.section1 div p {
+    font-size: 16px;
+    margin-left: 3px;
+}
+main h2 {
+    text-align: center;
+    padding: 30px;
+    font-style: italic;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+main h1 {
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 55px;
+}
+
+.mainNos {
+    height: 600px;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1.3fr 3.9fr 3.9fr 1.3fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        ". section aside .";
+}
+
+.aside {
+    grid-area: aside;
+    
+}
+.aside img{
+    border-radius: 200px;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+
+
+.section {
+    grid-area: section;
+    width: 300px;
+    margin-left: 5px;
+}
+
+.section h1 {
+    text-decoration: underline;
+    font-size: 35px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+.section p {
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.main-cont {
+    width: auto;
+    height: 100%;
+}
+
+.main-cont h1 {
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+
+
+}
+
+.form1 label {
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.btn {
+    background-color: rgba(0, 255, 255, 0.952);
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    border-color: rgba(0, 255, 255, 0.952);
+
+}
+
+.btn:hover {
+    background: rgba(247, 176, 117, 0.877);
+    transition: .5s;
+    color: black;
+    border-color: rgba(247, 176, 117, 0.877);
+}
+
+/**/
+.card-error {
+    box-shadow: 0px 6px 20px rgba(255, 0, 0, 0.147);
+    border: 1px solid darkred;
+    border-radius: 6px;
+    padding: 40px;
+    color: red;
+}
+
+.centrar-div {
+    text-align: center;
+}
+
+.formulario {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(90, 0, 139, 0.373);
+    box-shadow: 5px 10px 40px lightgray;
+}
+
+.btn-checkout {
+    background-color: rgba(139, 0, 139, 0.175) !important;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline;
+    padding: 10px;
+    float: right;
+    height: 70px;
+    width: 70px;
+}
+
+.btn-checkout img {
+    width: 60px;
+}
+
+.btn-checkout:hover {
+    box-shadow: 4px 4px 16px rgba(128, 128, 128, 0.476);
+    transition: 0.17s ease-in;
+}
+
+.btn-checkout:active {
+    transition: 0.3s ease-out;
+    filter: grayscale(100%)
+}
+
+.ocultar {
+    display: none !important;
+}
+
+thead tr {
+    background-color: rgb(247, 153, 76);
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    
+}
+tr td{
+    text-align: center;
+    font-size: 25px;
+}
+td button{
+    background-color: rgb(7, 0, 6);
+    color: white;
+    padding: 1px;
+    font-size: 20px;
+}
+
+.tablehead {
+    padding: 15px;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(173, 216, 230, 0.252) !important;
+}
+
+.comprarbtn{
+    background-color: aqua;
+    padding: 3px;
+    border-radius: 15px;
+    margin-bottom: 555px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
+.comprarbtn:hover{
+    transition: 0.17s ease-in;
+    background-color: rgb(247, 153, 76);
+}
+
+.main-carrito{
+    display: flex;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    height: auto;
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(247, 93, 126);
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer li {
+    color: black;
+    list-style: none;
+}
+
+
+footer ul a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.sideFooter1 ul  .facebook img{
+    padding-left: 35px;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+.sideFooter1 ul  .instagram img{
+    padding-left: 25px;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+
+.sideFooter1 h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.17em;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 1.17em;
+    padding-top: 3px;
+    color: white;
+}
+
+.sideFooter2 ul li {
+    padding: 5px;
+    text-decoration: underline;
+}
+
+/* Media Pantallas pequeñas*/
+
+@media (max-width: 2561px) {
+    .enlace {
+        padding-left: 35px;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .logo-footer {
+        display: block;
+    }
+
+    footer h3 {
+        display: block;
+    }
+
+    main h1 {
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 45px;
+
+    }
+
+    .mobi {
+        display: block;
+    }
+
+
+
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    header ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(to right, rgb(247, 93, 126), rgba(247, 176, 117, 0.877));
+        top: 158px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    header li a:hover,
+    header li a.active {
+        background: none;
+        color: rgb(45, 193, 204);
+    }
+
+    #check:checked~ul {
+        left: 0;
+
+    }
+
+    .logo-footer {
+        display: none;
+    }
+
+    footer h3 {
+        display: none;
+    }
+
+    main h1 {
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 30px;
+
+    }
+    .aside{
+        display: none;
+    }
+    
+
+}
+
+@media (max-width: 1006px) {
+    .banner {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 631px) {
+    .banner {
+        display: block;
+    }
+
+    .home2 {
+        display: none;
+    }
+    .banner img {
+        border-radius: 20px;
+        margin-bottom: 0;
+    }
+}

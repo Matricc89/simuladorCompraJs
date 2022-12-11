@@ -1,0 +1,32 @@
+[
+    {
+        "imagen":"../img/outlet2.jpg",
+        "id": 1,
+        "nombre": "Marin",
+        "precio": 5000
+    },
+    {
+        "imagen":"../img/outlet1.jpg",
+        "id": 2,
+        "nombre": "Isabel",
+        "precio": 6000
+    },
+    {
+        "imagen":"../img/outlet3.jpg",
+        "id": 3,
+        "nombre": "Lair",
+        "precio": 7000
+    },
+    {
+        "imagen":"../img/botas2.jpg",
+        "id": 4,
+        "nombre": "Marlot",
+        "precio": 7500
+    },
+    {
+        "imagen":"../img/303.jpg",
+        "id": 5,
+        "nombre": "Carmen",
+        "precio": 9500
+    }
+]               
