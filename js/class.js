@@ -1,3 +1,8 @@
+// Clase creada con el fin de que el usuario nos haga un feedback de la Experiencia
+// Faltaria mejorarlo un poco mas pero cumple un poco lo esperado
+// Solamente actua en desktop
+// En mobile esta Display None
+
 class Commit{
     constructor(name,message,year){
         this.name = name
