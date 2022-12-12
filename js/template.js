@@ -15,7 +15,7 @@ function armarHTML ({imagen, id,nombre,precio}) {
                 </div>
             </div>`
 }
-
+ 
 function armarCarrito(shoe){
    return  `<tr>
                 <td><img src="${shoe.imagen}" width="70px"></td>

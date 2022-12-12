@@ -70,9 +70,9 @@ const toast = (text, bgcolor)=> {
         text: text,
         duration: 3000,
         close: true,
-        gravity: "bottom", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "bottom", 
+        position: "right", 
+        stopOnFocus: true, 
         style: { background: bgcolor || 'CornFlowerBlue', fontSize: '24px'}
       }).showToast();
 }
